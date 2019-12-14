@@ -1,0 +1,18 @@
+#title {
+     background-color: rgb(30, 58, 130);
+     color: white;
+}
+
+#footer {
+     background-color: rgb(65, 99, 158);
+     margin: 10rem 0 0;
+     padding: 2rem;
+}
+
+#cf {
+     padding: 3% 15% 7%;
+}
+
+body {
+     text-align: center;
+}
