@@ -1,22 +1,20 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>API карт 2ГИС</title>
-        <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
-        <script type="text/javascript">
-            var map;
+<html lang="ru">
 
-            DG.then(function () {
-                map = DG.map('map', {
-                    center: [41.623655,74.690750],
-                    zoom: 6
-                });
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Гражданский мониторинг</title>
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Our css -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
 
-                DG.marker([42.836501,74.612302]).addTo(map).bindPopup('Вы кликнули по мне!');
-            });
-        </script>
-    </head>
-    <body>
-        <div id="map" style="width:500px; height:400px"></div>
-    </body>
+<body>
+
+</body>
+
 </html>
