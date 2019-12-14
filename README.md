@@ -1,6 +1,6 @@
 # Open_Data_Hackathon
 Гражданский мониторинг.
 
-hesize* Проект команды Radiant.
+hasize* Проект команды Radiant.
 
 Мониторинг 
