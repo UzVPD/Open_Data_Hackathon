@@ -21,10 +21,12 @@
 
           DG.then(function () {
                map = DG.map('map', {
-                    center: [42.827479, 75.295051],
-                    zoom: 55
+                    center: [42.481225, 78.377593],
+                    zoom: 45
                });
-               DG.marker([42.827479, 75.295051]).addTo(map).bindPopup('Ремонт дорожного полотна');
+
+               DG.marker([42.481225, 78.377593]).addTo(map).bindPopup(
+                    'Капитальный ремонт отопительной системы школы-гимназии №2');
           });
      </script>
 </head>
@@ -57,10 +59,10 @@
                                         Разделы
                                    </a>
                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="obrazovaniye.html">Образование</a>
+                                        <a class="dropdown-item active" href="obrazovaniye.html">Образование</a>
                                         <a class="dropdown-item" href="sport.html">Спорт</a>
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item active" href="dorogi.html">Дороги</a>
+                                        <a class="dropdown-item" href="dorogi.html">Дороги</a>
                                    </div>
                               </li>
 
@@ -78,11 +80,25 @@
      </section>
 
      <section id="main-content">
-          <h1>Дороги</h1>
+          <h1>Образование</h1>
           <div class="container-fluid" id="content">
                <div class="row">
                     <div class="col-sm">
-                         <h5>Ремонт дорожного полотна.</h5>
+                         <h5>Капитальный ремонт отопительной системы школы-гимназии №2</h5>
+                         <div class="progress">
+                              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                   aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
+                         </div>
+
+                         <ul class="list-group">
+                              <li class="list-group-item">Бюджет: 800000 сом</li>
+                              <li class="list-group-item">Подрядчик: <a href="https://su4.kg/">ОАО «Строительное
+                                        Управление №4</a> </li>
+                              <li class="list-group-item">Дата начала: 22.07.2019</li>
+                              <li class="list-group-item list-group-item-success">Примерная дата сдачи объекта:
+                                   25.09.2019</li>
+                              <!-- <li class="list-group-item">Просрочено на <strong>474</strong> дня</li> -->
+                         </ul>
                     </div>
                     <div class="col-sm">
                          <div id="map" style="width:500px; height:400px"></div>

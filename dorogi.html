@@ -20,13 +20,21 @@
           var map;
 
           DG.then(function () {
+
                map = DG.map('map', {
-                    center: [42.481225, 78.377593],
-                    zoom: 45
+                    //url "download.png",
+                    center: [42.827479, 75.295051],
+                    zoom: 55
                });
 
-               DG.marker([42.481225, 78.377593]).addTo(map).bindPopup(
-                    'Капитальный ремонт отопительной системы школы-гимназии №2');
+               myIcon = DG.icon({
+                    iconUrl: '/images/doroga.png',
+                    iconSize: [48, 48]
+               });
+               DG.marker([42.827479, 75.295051], {
+                    icon: myIcon
+               }).addTo(map).bindPopup('Ремонт дорожного полотна');
+
           });
      </script>
 </head>
@@ -48,7 +56,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                          <ul class="navbar-nav mr-auto">
                               <li class="nav-item">
-                                   <a class="nav-link" href="/index.html">Главная</a>
+                                   <a class="nav-link" href="index.html">Главная</a>
                               </li>
                               <li class="nav-item">
                                    <a class="nav-link" href="o_nas.html">О проекте</a>
@@ -59,10 +67,10 @@
                                         Разделы
                                    </a>
                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item active" href="obrazovaniye.html">Образование</a>
+                                        <a class="dropdown-item" href="obrazovaniye.html">Образование</a>
                                         <a class="dropdown-item" href="sport.html">Спорт</a>
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="dorogi.html">Дороги</a>
+                                        <a class="dropdown-item active" href="dorogi.html">Дороги</a>
                                    </div>
                               </li>
 
@@ -80,17 +88,57 @@
      </section>
 
      <section id="main-content">
-          <h1>Образование</h1>
+          <h1>Дороги</h1>
           <div class="container-fluid" id="content">
                <div class="row">
                     <div class="col-sm">
-                         <h5>Капитальный ремонт отопительной системы школы-гимназии №2</h5>
+                         <h5>Ремонт дорожного полотна.</h5>
+
+                         <div class="progress">
+                              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                   aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">10%</div>
+                         </div>
+
+                         <ul class="list-group">
+                              <li class="list-group-item">Бюджет: 54000000 сом</li>
+                              <li class="list-group-item">Подрядчик: <a href="https://su4.kg/">ОАО «Строительное
+                                        Управление №4</a> </li>
+                              <li class="list-group-item">Дата начала: 22.08.2018</li>
+                              <li class="list-group-item list-group-item-danger">Примерная дата сдачи объекта:
+                                   25.10.2018</li>
+                              <li class="list-group-item">Просрочено на <strong>474</strong> дня</li>
+                         </ul>
+
+                         <img src="" alt="">
+
                     </div>
                     <div class="col-sm">
                          <div id="map" style="width:500px; height:400px"></div>
                     </div>
                </div>
+               <br>
+               <div class="row">
+                    <div class="col-sm schema">
+                         <h2>Схема проекта</h2>
+                    </div>
+                    <div class="col-sm">
+                         <img src="/images/schema.jpg" alt="">
+                    </div>
+               </div>
+               <br>
+               <div class="row">
+                    <div class="col-sm">
+                         <h2>Отзывы</h2>
+                         <h5>patriot97 -//- 25.10.2018</h5>
+                         <p>Cпециально пришел на "Открытие". Дороги нету, рабочих нету, сколько еще будем ждать? Вот
+                              сфоткал
+                              специально: </p>
+                    </div>
 
+                    <div class="col-sm">
+                         <img src="/images/images.jpeg" alt="">
+                    </div>
+               </div>
      </section>
 
 
