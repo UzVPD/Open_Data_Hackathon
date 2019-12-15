@@ -14,7 +14,29 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- my css -->
     <link rel="stylesheet" href="styles/style.css">
+    <!-- 2GIS -->
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    <script type="text/javascript">
+        var map;
 
+        DG.then(function () {
+            map = DG.map('map', {
+                center: [41.623655, 74.690750],
+                zoom: 6,
+                maxBounds: [
+                    [40.091205, 68.981353],
+                    [42.138841, 80.338480]
+                ],
+                minZoom: 6,
+                maxZoom: 10
+            });
+
+            DG.marker([40.704422, 72.880199]).addTo(map).bindPopup('Строительство мини футбольного поля');
+            DG.marker([42.827479, 75.295051]).addTo(map).bindPopup('Ремонт дорожного полотна');
+            DG.marker([42.481225, 78.377593]).addTo(map).bindPopup(
+                'Капитальный ремонт отопительной системы школы-гимназии №2');
+        });
+    </script>
 </head>
 
 <body>
@@ -67,7 +89,53 @@
 
     <section class="main-content">
 
+        <div class="container-fluid" id="content">
 
+            <div class="row">
+                <div class="col-sm">
+
+                    <div class="list-group">
+                        <a href="/html/sport.html"
+                            class="list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1"> Строительство мини футбольного поля</h5>
+                                <small>месяц назад</small>
+                            </div>
+                            <p class="mb-1">Проект финансируется министерством финансов</p>
+                            <small>Бюджет 800000 сом</small>
+                        </a>
+                        <a href="/html/dorogi.html"
+                            class="list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1"> Ремонт дорожного полотна</h5>
+                                <small class="text-muted">3 дня назад</small>
+                            </div>
+                            <p class="mb-1">Проект финансируется министерством финансов</p>
+                            <small class="text-muted">Бюджет 70000000сом</small>
+                        </a>
+                        <a href="/html/obrazovaniye.html"
+                            class="list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">
+                                    Капитальный ремонт отопительной системы школы-гимназии №2</h5>
+                                <small class="text-muted">4 месяца назад</small>
+                            </div>
+                            <p class="mb-1">Проект финансируется министерством финансов</p>
+                            <small class="text-muted">Бюджет 1000000 сом</small>
+                        </a>
+                    </div>
+
+
+
+
+                </div>
+                <div class="col-sm">
+                    <div id="map" style="width:500px; height:400px"></div>
+                </div>
+            </div>
+
+
+        </div>
 
 
     </section>

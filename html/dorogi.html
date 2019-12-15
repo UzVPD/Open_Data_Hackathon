@@ -14,6 +14,19 @@
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
      <!-- my css -->
      <link rel="stylesheet" href="/styles/style.css">
+     <!-- 2GIS -->
+     <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+     <script type="text/javascript">
+          var map;
+
+          DG.then(function () {
+               map = DG.map('map', {
+                    center: [42.827479, 75.295051],
+                    zoom: 55
+               });
+               DG.marker([42.827479, 75.295051]).addTo(map).bindPopup('Ремонт дорожного полотна');
+          });
+     </script>
 </head>
 
 <body>
@@ -66,6 +79,16 @@
 
      <section id="main-content">
           <h1>Дороги</h1>
+          <div class="container-fluid" id="content">
+               <div class="row">
+                    <div class="col-sm">
+                         <h5>Ремонт дорожного полотна.</h5>
+                    </div>
+                    <div class="col-sm">
+                         <div id="map" style="width:500px; height:400px"></div>
+                    </div>
+               </div>
+
      </section>
 
 
