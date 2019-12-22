@@ -12,22 +12,26 @@
 }
 
 #footer {
-     background: rgb(159, 161, 218);
-     background: linear-gradient(0deg, rgba(159, 161, 218, 1) 0%, rgba(236, 228, 241, 1) 100%);
+     background: rgb(149, 151, 232);
+     background: linear-gradient(133deg, rgba(149, 151, 232, 1) 0%, rgba(236, 218, 247, 1) 100%);
      margin: 10rem 0 0;
      padding: 2rem;
 }
 
 #cf2 {
-     padding: 3% 15% 49%;
-     background-image: url(images/Kyrgyzstan.png);
-     background-position: center;
+     padding: 3% 15% 7%;
+     background: rgb(149, 151, 232);
+     background: linear-gradient(133deg, rgba(149, 151, 232, 1) 0%, rgba(236, 218, 247, 1) 100%);
+     /* background-image: url(images/Kyrgyzstan.png);
+     background-position: center; */
 }
 
 #cf {
      padding: 3% 15% 7%;
-     background-image: url(images/Kyrgyzstan.png);
-     background-position: center;
+     background: rgb(149, 151, 232);
+     background: linear-gradient(133deg, rgba(149, 151, 232, 1) 0%, rgba(236, 218, 247, 1) 100%);
+     /* background-image: url(images/Kyrgyzstan.png);
+     background-position: center; */
 }
 
 
@@ -48,12 +52,12 @@
 
 
 html {
-     font-family: 'Open Sans', sans-serif;
+     font-family: 'Nunito', sans-serif;
 }
 
 body {
      text-align: center;
-     font-family: 'Open Sans', sans-serif;
+     font-family: 'Nunito', sans-serif;
 }
 
 
